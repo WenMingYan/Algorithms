@@ -24,9 +24,9 @@
                 result[j] = [NSNumber numberWithInteger:key];
 //                NSLog(@"sort = %@",result);
                 break;
-            }
-        }
-    }
+            }// end of if
+        }// end of for j
+    }// end of for i
     return result;
     
     

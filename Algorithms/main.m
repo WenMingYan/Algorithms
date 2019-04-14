@@ -18,14 +18,12 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         NSLog(@"Hello, World!");
         NSMutableArray *array = [NSMutableArray array];
-        [array addObject:[NSNumber numberWithInt:3]];
-        [array addObject:[NSNumber numberWithInt:2]];
-        [array addObject:[NSNumber numberWithInt:8]];
-        [array addObject:[NSNumber numberWithInt:5]];
-        [array addObject:[NSNumber numberWithInt:4]];
-        [array addObject:[NSNumber numberWithInt:1]];
-        [array addObject:[NSNumber numberWithInt:7]];
-        [array addObject:[NSNumber numberWithInt:6]];
+        [array addObject:[NSNumber numberWithInt:31]];
+        [array addObject:[NSNumber numberWithInt:41]];
+        [array addObject:[NSNumber numberWithInt:59]];
+        [array addObject:[NSNumber numberWithInt:26]];
+        [array addObject:[NSNumber numberWithInt:41]];
+        [array addObject:[NSNumber numberWithInt:58]];
         NSArray *result = [MYInsertionSort insertionSortWithArray:array];
         NSLog(@"InsertionSort result is :\n %@",result);
         

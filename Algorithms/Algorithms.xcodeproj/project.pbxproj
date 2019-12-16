@@ -15,6 +15,7 @@
 		DE9512B523A75BA600E39D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9512B423A75BA600E39D79 /* Assets.xcassets */; };
 		DE9512B823A75BA600E39D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9512B623A75BA600E39D79 /* LaunchScreen.storyboard */; };
 		DE9512BB23A75BA600E39D79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9512BA23A75BA600E39D79 /* main.m */; };
+		DE9512C323A7663400E39D79 /* MYChatper1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9512C223A7663400E39D79 /* MYChatper1ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		DE9512B723A75BA600E39D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE9512B923A75BA600E39D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE9512BA23A75BA600E39D79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE9512C123A7663400E39D79 /* MYChatper1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYChatper1ViewController.h; sourceTree = "<group>"; };
+		DE9512C223A7663400E39D79 /* MYChatper1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYChatper1ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +56,6 @@
 				3088135B7291995D86C8A4CA /* Pods-Algorithms.debug.xcconfig */,
 				32A7930A277ED46F66D23E32 /* Pods-Algorithms.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -97,6 +99,8 @@
 				DE9512B623A75BA600E39D79 /* LaunchScreen.storyboard */,
 				DE9512B923A75BA600E39D79 /* Info.plist */,
 				DE9512BA23A75BA600E39D79 /* main.m */,
+				DE9512C123A7663400E39D79 /* MYChatper1ViewController.h */,
+				DE9512C223A7663400E39D79 /* MYChatper1ViewController.m */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -197,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9512C323A7663400E39D79 /* MYChatper1ViewController.m in Sources */,
 				DE9512B023A75BA500E39D79 /* ViewController.m in Sources */,
 				DE9512AA23A75BA500E39D79 /* AppDelegate.m in Sources */,
 				DE9512BB23A75BA600E39D79 /* main.m in Sources */,

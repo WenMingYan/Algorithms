@@ -1,22 +1,21 @@
 //
-//  ViewController.m
+//  MYChatper1ViewController.m
 //  Algorithms
 //
 //  Created by 温明妍 on 2019/12/16.
 //  Copyright © 2019 温明妍. All rights reserved.
 //
 
-#import "ViewController.h"
-#import <Masonry/Masonry.h>
 #import "MYChatper1ViewController.h"
+#import <Masonry/Masonry.h>
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface MYChatper1ViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 
 @end
 
-@implementation ViewController
+@implementation MYChatper1ViewController
 
 #pragma mark - --------------------dealloc ------------------
 #pragma mark - --------------------life cycle--------------------
@@ -32,12 +31,13 @@
 }
 
 - (void)initView {
-    self.title = @"Algorithms Demo";
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
 }
+
+
 
 #pragma mark - --------------------UITableViewDelegate--------------
 
@@ -73,13 +73,13 @@
 
 - (NSDictionary<NSString *,NSString *> *)nameDict {
     return @{
-        @"chapter 1":@"MYChatper1ViewController",
+        @"default":@"MYViewController",
     };
 }
 
 - (NSArray<NSString *> *)names {
     return @[
-        @"chapter 1"
+        @"default"
     ];
 }
 
@@ -91,5 +91,6 @@
     }
     return _tableView;
 }
+
 
 @end

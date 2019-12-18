@@ -6,12 +6,9 @@
 //  Copyright © 2019 温明妍. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MYBaseChapterViewController.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface MYChatper1ViewController : UIViewController
+@interface MYChatper1ViewController : MYBaseChapterViewController
 
 @end
 
-NS_ASSUME_NONNULL_END

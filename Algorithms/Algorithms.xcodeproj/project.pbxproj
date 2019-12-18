@@ -17,6 +17,9 @@
 		DE9512BB23A75BA600E39D79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9512BA23A75BA600E39D79 /* main.m */; };
 		DE9512C323A7663400E39D79 /* MYChatper1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9512C223A7663400E39D79 /* MYChatper1ViewController.m */; };
 		DE9512C723A7676000E39D79 /* MYSortUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9512C623A7676000E39D79 /* MYSortUtils.m */; };
+		DED6347223A9C520001EED28 /* MYChapter0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED6347123A9C520001EED28 /* MYChapter0ViewController.m */; };
+		DED6347523A9C543001EED28 /* MYBaseChapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED6347423A9C543001EED28 /* MYBaseChapterViewController.m */; };
+		DED6347823A9C6BD001EED28 /* MYSunUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DED6347723A9C6BD001EED28 /* MYSunUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,12 @@
 		DE9512C223A7663400E39D79 /* MYChatper1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYChatper1ViewController.m; sourceTree = "<group>"; };
 		DE9512C523A7676000E39D79 /* MYSortUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSortUtils.h; sourceTree = "<group>"; };
 		DE9512C623A7676000E39D79 /* MYSortUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSortUtils.m; sourceTree = "<group>"; };
+		DED6347023A9C520001EED28 /* MYChapter0ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYChapter0ViewController.h; sourceTree = "<group>"; };
+		DED6347123A9C520001EED28 /* MYChapter0ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYChapter0ViewController.m; sourceTree = "<group>"; };
+		DED6347323A9C543001EED28 /* MYBaseChapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYBaseChapterViewController.h; sourceTree = "<group>"; };
+		DED6347423A9C543001EED28 /* MYBaseChapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYBaseChapterViewController.m; sourceTree = "<group>"; };
+		DED6347623A9C6BD001EED28 /* MYSunUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSunUtils.h; sourceTree = "<group>"; };
+		DED6347723A9C6BD001EED28 /* MYSunUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSunUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +100,9 @@
 		DE9512A723A75BA500E39D79 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				DED6347323A9C543001EED28 /* MYBaseChapterViewController.h */,
+				DED6347423A9C543001EED28 /* MYBaseChapterViewController.m */,
+				DED6346F23A9C506001EED28 /* Chapter0 */,
 				DE9512C423A7674800E39D79 /* Chapter1 */,
 				DE9512A823A75BA500E39D79 /* AppDelegate.h */,
 				DE9512A923A75BA500E39D79 /* AppDelegate.m */,
@@ -103,8 +115,6 @@
 				DE9512B623A75BA600E39D79 /* LaunchScreen.storyboard */,
 				DE9512B923A75BA600E39D79 /* Info.plist */,
 				DE9512BA23A75BA600E39D79 /* main.m */,
-				DE9512C123A7663400E39D79 /* MYChatper1ViewController.h */,
-				DE9512C223A7663400E39D79 /* MYChatper1ViewController.m */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -112,10 +122,23 @@
 		DE9512C423A7674800E39D79 /* Chapter1 */ = {
 			isa = PBXGroup;
 			children = (
+				DE9512C123A7663400E39D79 /* MYChatper1ViewController.h */,
+				DE9512C223A7663400E39D79 /* MYChatper1ViewController.m */,
 				DE9512C523A7676000E39D79 /* MYSortUtils.h */,
 				DE9512C623A7676000E39D79 /* MYSortUtils.m */,
 			);
 			path = Chapter1;
+			sourceTree = "<group>";
+		};
+		DED6346F23A9C506001EED28 /* Chapter0 */ = {
+			isa = PBXGroup;
+			children = (
+				DED6347023A9C520001EED28 /* MYChapter0ViewController.h */,
+				DED6347123A9C520001EED28 /* MYChapter0ViewController.m */,
+				DED6347623A9C6BD001EED28 /* MYSunUtils.h */,
+				DED6347723A9C6BD001EED28 /* MYSunUtils.m */,
+			);
+			path = Chapter0;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,9 +240,12 @@
 				DE9512C323A7663400E39D79 /* MYChatper1ViewController.m in Sources */,
 				DE9512C723A7676000E39D79 /* MYSortUtils.m in Sources */,
 				DE9512B023A75BA500E39D79 /* ViewController.m in Sources */,
+				DED6347223A9C520001EED28 /* MYChapter0ViewController.m in Sources */,
 				DE9512AA23A75BA500E39D79 /* AppDelegate.m in Sources */,
 				DE9512BB23A75BA600E39D79 /* main.m in Sources */,
 				DE9512AD23A75BA500E39D79 /* SceneDelegate.m in Sources */,
+				DED6347523A9C543001EED28 /* MYBaseChapterViewController.m in Sources */,
+				DED6347823A9C6BD001EED28 /* MYSunUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

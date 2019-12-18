@@ -16,33 +16,23 @@
         return nil;
     }
     NSInteger unsortNumber;
-    NSMutableArray *result = [NSMutableArray arrayWithCapacity:unsortArray.count];
-    
-    // 先加入第0个数
-    [result addObject:unsortArray[0]];
-    
-    for (int i = 1; i < unsortArray.count; i++) {
-        unsortNumber = [[unsortArray objectAtIndex:i] integerValue];
-        NSArray *middle = result.copy;
-        for (int j = 0; j < middle.count; j++) {
-            NSInteger sortNumber = [[result objectAtIndex:j] integerValue];
-            if (unsortNumber < sortNumber) {
-                [result insertObject:[NSNumber numberWithInteger:unsortNumber] atIndex:j];
+    NSMutableArray *result = [NSMutableArray arrayWithArray:unsortArray];
+
+    for (int i = 1; i < result.count; i++) {
+        unsortNumber = [[result objectAtIndex:i] integerValue];
+        for (int j = 0; j < i; j++) {
+            NSInteger sortedNumber = [[result objectAtIndex:j] integerValue];
+            if (unsortNumber < sortedNumber) {
+                [result removeObjectAtIndex:i];
+                [result insertObject:@(unsortNumber) atIndex:j];
                 break;
             }
         }
-        if (middle.count == result.count) {
-            [result addObject:[NSNumber numberWithInteger:unsortNumber]];
-        }
-        
-        NSLog(@"current result: %@",result);
-        
+//        NSLog(@"current result: %@",result);
     }
-    
     NSTimeInterval endTime = [NSDate date].timeIntervalSince1970;
     
     NSLog(@"diffTime = %f",endTime - startTime);
-    NSLog(@"复杂度：O(n) = n^2");
     return result;
 }
 

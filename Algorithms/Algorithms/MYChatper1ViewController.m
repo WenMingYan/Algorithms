@@ -4,10 +4,11 @@
 //
 //  Created by 温明妍 on 2019/12/16.
 //  Copyright © 2019 温明妍. All rights reserved.
-//
+//  第一章的vc
 
 #import "MYChatper1ViewController.h"
 #import <Masonry/Masonry.h>
+#import "MYSortUtils.h"
 
 @interface MYChatper1ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -63,23 +64,40 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSString *title = [[self names] objectAtIndex:indexPath.row];
     NSString *vcString = [self nameDict][title];
-    [self.navigationController pushViewController:[[NSClassFromString(vcString) alloc] init] animated:YES];
+    if ([self respondsToSelector:NSSelectorFromString(vcString)]) {
+        [self performSelector:NSSelectorFromString(vcString)];
+    }
 }
 
 #pragma mark - --------------------CustomDelegate--------------
 #pragma mark - --------------------Event Response--------------
+
+- (void)insertionSort {
+    NSArray *array = @[@5,@2,@4,@6,@1,@3];
+    NSArray *result = [MYSortUtils insertionSortingWithArray:array];
+    NSLog(@"result = %@",result);
+}
+
+- (void)insertionSort1 {
+    NSArray *array = @[@5,@2,@4,@6,@1,@3];
+    NSArray *result = [MYSortUtils insertionSorting1WithArray:array];
+    NSLog(@"result = %@",result);
+}
+
 #pragma mark - --------------------private methods--------------
 #pragma mark - --------------------getters & setters & init members ------------------
 
 - (NSDictionary<NSString *,NSString *> *)nameDict {
     return @{
-        @"default":@"MYViewController",
+        @"insertion Sort":@"insertionSort",
+        @"insertion Sort1":@"insertionSort1",
     };
 }
 
 - (NSArray<NSString *> *)names {
     return @[
-        @"default"
+        @"insertion Sort",
+        @"insertion Sort1",
     ];
 }
 

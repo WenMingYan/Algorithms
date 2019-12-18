@@ -16,6 +16,7 @@
 		DE9512B823A75BA600E39D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9512B623A75BA600E39D79 /* LaunchScreen.storyboard */; };
 		DE9512BB23A75BA600E39D79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9512BA23A75BA600E39D79 /* main.m */; };
 		DE9512C323A7663400E39D79 /* MYChatper1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9512C223A7663400E39D79 /* MYChatper1ViewController.m */; };
+		DE9512C723A7676000E39D79 /* MYSortUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9512C623A7676000E39D79 /* MYSortUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		DE9512BA23A75BA600E39D79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE9512C123A7663400E39D79 /* MYChatper1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYChatper1ViewController.h; sourceTree = "<group>"; };
 		DE9512C223A7663400E39D79 /* MYChatper1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYChatper1ViewController.m; sourceTree = "<group>"; };
+		DE9512C523A7676000E39D79 /* MYSortUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSortUtils.h; sourceTree = "<group>"; };
+		DE9512C623A7676000E39D79 /* MYSortUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSortUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 		DE9512A723A75BA500E39D79 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				DE9512C423A7674800E39D79 /* Chapter1 */,
 				DE9512A823A75BA500E39D79 /* AppDelegate.h */,
 				DE9512A923A75BA500E39D79 /* AppDelegate.m */,
 				DE9512AB23A75BA500E39D79 /* SceneDelegate.h */,
@@ -103,6 +107,15 @@
 				DE9512C223A7663400E39D79 /* MYChatper1ViewController.m */,
 			);
 			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		DE9512C423A7674800E39D79 /* Chapter1 */ = {
+			isa = PBXGroup;
+			children = (
+				DE9512C523A7676000E39D79 /* MYSortUtils.h */,
+				DE9512C623A7676000E39D79 /* MYSortUtils.m */,
+			);
+			path = Chapter1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE9512C323A7663400E39D79 /* MYChatper1ViewController.m in Sources */,
+				DE9512C723A7676000E39D79 /* MYSortUtils.m in Sources */,
 				DE9512B023A75BA500E39D79 /* ViewController.m in Sources */,
 				DE9512AA23A75BA500E39D79 /* AppDelegate.m in Sources */,
 				DE9512BB23A75BA600E39D79 /* main.m in Sources */,

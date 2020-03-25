@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17582F34E56B6A7717DA2611 /* libPods-Algorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2162D3F537A244F00054AD /* libPods-Algorithms.a */; };
+		DE1DE4BB241241D900EACFB1 /* MYSecKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1DE4BA241241D900EACFB1 /* MYSecKeyViewController.m */; };
 		DE9512AA23A75BA500E39D79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9512A923A75BA500E39D79 /* AppDelegate.m */; };
 		DE9512AD23A75BA500E39D79 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9512AC23A75BA500E39D79 /* SceneDelegate.m */; };
 		DE9512B023A75BA500E39D79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9512AF23A75BA500E39D79 /* ViewController.m */; };
@@ -26,6 +27,8 @@
 		3088135B7291995D86C8A4CA /* Pods-Algorithms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algorithms.debug.xcconfig"; path = "Target Support Files/Pods-Algorithms/Pods-Algorithms.debug.xcconfig"; sourceTree = "<group>"; };
 		32A7930A277ED46F66D23E32 /* Pods-Algorithms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algorithms.release.xcconfig"; path = "Target Support Files/Pods-Algorithms/Pods-Algorithms.release.xcconfig"; sourceTree = "<group>"; };
 		9E2162D3F537A244F00054AD /* libPods-Algorithms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Algorithms.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1DE4B9241241D900EACFB1 /* MYSecKeyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSecKeyViewController.h; sourceTree = "<group>"; };
+		DE1DE4BA241241D900EACFB1 /* MYSecKeyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSecKeyViewController.m; sourceTree = "<group>"; };
 		DE9512A523A75BA500E39D79 /* Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9512A823A75BA500E39D79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE9512A923A75BA500E39D79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				DE9512B623A75BA600E39D79 /* LaunchScreen.storyboard */,
 				DE9512B923A75BA600E39D79 /* Info.plist */,
 				DE9512BA23A75BA600E39D79 /* main.m */,
+				DE1DE4B9241241D900EACFB1 /* MYSecKeyViewController.h */,
+				DE1DE4BA241241D900EACFB1 /* MYSecKeyViewController.m */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE1DE4BB241241D900EACFB1 /* MYSecKeyViewController.m in Sources */,
 				DE9512C323A7663400E39D79 /* MYChatper1ViewController.m in Sources */,
 				DE9512C723A7676000E39D79 /* MYSortUtils.m in Sources */,
 				DE9512B023A75BA500E39D79 /* ViewController.m in Sources */,

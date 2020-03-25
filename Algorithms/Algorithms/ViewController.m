@@ -74,12 +74,14 @@
 - (NSDictionary<NSString *,NSString *> *)nameDict {
     return @{
         @"chapter 1":@"MYChatper1ViewController",
+        @"secKey":@"MYSecKeyViewController"
     };
 }
 
 - (NSArray<NSString *> *)names {
     return @[
-        @"chapter 1"
+        @"chapter 1",
+        @"secKey"
     ];
 }
 

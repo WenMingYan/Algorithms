@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		17582F34E56B6A7717DA2611 /* libPods-Algorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2162D3F537A244F00054AD /* libPods-Algorithms.a */; };
 		DE1DE4BB241241D900EACFB1 /* MYSecKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1DE4BA241241D900EACFB1 /* MYSecKeyViewController.m */; };
+		DE4EEE09245DA1D600903C96 /* MYLeetCodeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4EEE08245DA1D600903C96 /* MYLeetCodeListViewController.m */; };
+		DE4EEE0F245DA25400903C96 /* MYMergeListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4EEE0E245DA25400903C96 /* MYMergeListNode.m */; };
+		DE4EEE17245DA3C700903C96 /* AlgorithmsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4EEE16245DA3C700903C96 /* AlgorithmsTests.m */; };
 		DE9512AA23A75BA500E39D79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9512A923A75BA500E39D79 /* AppDelegate.m */; };
 		DE9512AD23A75BA500E39D79 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9512AC23A75BA500E39D79 /* SceneDelegate.m */; };
 		DE9512B023A75BA500E39D79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9512AF23A75BA500E39D79 /* ViewController.m */; };
@@ -23,12 +26,29 @@
 		DED6347823A9C6BD001EED28 /* MYSunUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DED6347723A9C6BD001EED28 /* MYSunUtils.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DE4EEE19245DA3C800903C96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE95129D23A75BA500E39D79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE9512A423A75BA500E39D79;
+			remoteInfo = Algorithms;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		3088135B7291995D86C8A4CA /* Pods-Algorithms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algorithms.debug.xcconfig"; path = "Target Support Files/Pods-Algorithms/Pods-Algorithms.debug.xcconfig"; sourceTree = "<group>"; };
 		32A7930A277ED46F66D23E32 /* Pods-Algorithms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algorithms.release.xcconfig"; path = "Target Support Files/Pods-Algorithms/Pods-Algorithms.release.xcconfig"; sourceTree = "<group>"; };
 		9E2162D3F537A244F00054AD /* libPods-Algorithms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Algorithms.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1DE4B9241241D900EACFB1 /* MYSecKeyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSecKeyViewController.h; sourceTree = "<group>"; };
 		DE1DE4BA241241D900EACFB1 /* MYSecKeyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSecKeyViewController.m; sourceTree = "<group>"; };
+		DE4EEE07245DA1D600903C96 /* MYLeetCodeListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYLeetCodeListViewController.h; sourceTree = "<group>"; };
+		DE4EEE08245DA1D600903C96 /* MYLeetCodeListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYLeetCodeListViewController.m; sourceTree = "<group>"; };
+		DE4EEE0D245DA25400903C96 /* MYMergeListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYMergeListNode.h; sourceTree = "<group>"; };
+		DE4EEE0E245DA25400903C96 /* MYMergeListNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYMergeListNode.m; sourceTree = "<group>"; };
+		DE4EEE14245DA3C700903C96 /* AlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE4EEE16245DA3C700903C96 /* AlgorithmsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmsTests.m; sourceTree = "<group>"; };
+		DE4EEE18245DA3C700903C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE9512A523A75BA500E39D79 /* Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9512A823A75BA500E39D79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE9512A923A75BA500E39D79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +74,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DE4EEE11245DA3C700903C96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DE9512A223A75BA500E39D79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,10 +109,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE4EEE06245DA1BC00903C96 /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				DE4EEE07245DA1D600903C96 /* MYLeetCodeListViewController.h */,
+				DE4EEE08245DA1D600903C96 /* MYLeetCodeListViewController.m */,
+				DE4EEE0D245DA25400903C96 /* MYMergeListNode.h */,
+				DE4EEE0E245DA25400903C96 /* MYMergeListNode.m */,
+			);
+			path = LeetCode;
+			sourceTree = "<group>";
+		};
+		DE4EEE15245DA3C700903C96 /* AlgorithmsTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE4EEE16245DA3C700903C96 /* AlgorithmsTests.m */,
+				DE4EEE18245DA3C700903C96 /* Info.plist */,
+			);
+			path = AlgorithmsTests;
+			sourceTree = "<group>";
+		};
 		DE95129C23A75BA500E39D79 = {
 			isa = PBXGroup;
 			children = (
 				DE9512A723A75BA500E39D79 /* Algorithms */,
+				DE4EEE15245DA3C700903C96 /* AlgorithmsTests */,
 				DE9512A623A75BA500E39D79 /* Products */,
 				56C7260B3708B6897C3F9703 /* Pods */,
 				C29FC91E1B11EBAC680B196E /* Frameworks */,
@@ -96,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				DE9512A523A75BA500E39D79 /* Algorithms.app */,
+				DE4EEE14245DA3C700903C96 /* AlgorithmsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +152,7 @@
 		DE9512A723A75BA500E39D79 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				DE4EEE06245DA1BC00903C96 /* LeetCode */,
 				DED6347323A9C543001EED28 /* MYBaseChapterViewController.h */,
 				DED6347423A9C543001EED28 /* MYBaseChapterViewController.m */,
 				DED6346F23A9C506001EED28 /* Chapter0 */,
@@ -149,6 +199,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DE4EEE13245DA3C700903C96 /* AlgorithmsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE4EEE1B245DA3C800903C96 /* Build configuration list for PBXNativeTarget "AlgorithmsTests" */;
+			buildPhases = (
+				DE4EEE10245DA3C700903C96 /* Sources */,
+				DE4EEE11245DA3C700903C96 /* Frameworks */,
+				DE4EEE12245DA3C700903C96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE4EEE1A245DA3C800903C96 /* PBXTargetDependency */,
+			);
+			name = AlgorithmsTests;
+			productName = AlgorithmsTests;
+			productReference = DE4EEE14245DA3C700903C96 /* AlgorithmsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DE9512A423A75BA500E39D79 /* Algorithms */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE9512BE23A75BA600E39D79 /* Build configuration list for PBXNativeTarget "Algorithms" */;
@@ -176,6 +244,10 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "温明妍";
 				TargetAttributes = {
+					DE4EEE13245DA3C700903C96 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = DE9512A423A75BA500E39D79;
+					};
 					DE9512A423A75BA500E39D79 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -195,11 +267,19 @@
 			projectRoot = "";
 			targets = (
 				DE9512A423A75BA500E39D79 /* Algorithms */,
+				DE4EEE13245DA3C700903C96 /* AlgorithmsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DE4EEE12245DA3C700903C96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DE9512A323A75BA500E39D79 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,6 +318,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DE4EEE10245DA3C700903C96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE4EEE17245DA3C700903C96 /* AlgorithmsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DE9512A123A75BA500E39D79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,9 +334,11 @@
 				DE9512C323A7663400E39D79 /* MYChatper1ViewController.m in Sources */,
 				DE9512C723A7676000E39D79 /* MYSortUtils.m in Sources */,
 				DE9512B023A75BA500E39D79 /* ViewController.m in Sources */,
+				DE4EEE0F245DA25400903C96 /* MYMergeListNode.m in Sources */,
 				DED6347223A9C520001EED28 /* MYChapter0ViewController.m in Sources */,
 				DE9512AA23A75BA500E39D79 /* AppDelegate.m in Sources */,
 				DE9512BB23A75BA600E39D79 /* main.m in Sources */,
+				DE4EEE09245DA1D600903C96 /* MYLeetCodeListViewController.m in Sources */,
 				DE9512AD23A75BA500E39D79 /* SceneDelegate.m in Sources */,
 				DED6347523A9C543001EED28 /* MYBaseChapterViewController.m in Sources */,
 				DED6347823A9C6BD001EED28 /* MYSunUtils.m in Sources */,
@@ -256,6 +346,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE4EEE1A245DA3C800903C96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE9512A423A75BA500E39D79 /* Algorithms */;
+			targetProxy = DE4EEE19245DA3C800903C96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DE9512B123A75BA500E39D79 /* Main.storyboard */ = {
@@ -277,6 +375,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DE4EEE1C245DA3C800903C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AH8FHU45PG;
+				INFOPLIST_FILE = AlgorithmsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wmy.AlgorithmsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algorithms.app/Algorithms";
+			};
+			name = Debug;
+		};
+		DE4EEE1D245DA3C800903C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AH8FHU45PG;
+				INFOPLIST_FILE = AlgorithmsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wmy.AlgorithmsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algorithms.app/Algorithms";
+			};
+			name = Release;
+		};
 		DE9512BC23A75BA600E39D79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -426,6 +564,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DE4EEE1B245DA3C800903C96 /* Build configuration list for PBXNativeTarget "AlgorithmsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE4EEE1C245DA3C800903C96 /* Debug */,
+				DE4EEE1D245DA3C800903C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DE9512A023A75BA500E39D79 /* Build configuration list for PBXProject "Algorithms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -5,7 +5,7 @@ DEPENDENCIES:
   - Masonry (= 1.1.0)
 
 SPEC REPOS:
-  https://cdn.cocoapods.org/:
+  trunk:
     - Masonry
 
 SPEC CHECKSUMS:
@@ -13,4 +13,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 4e81577adc3fc9061085e5cad56caefb48c47975
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.2

@@ -3,7 +3,7 @@
 //  SwiftLC
 //
 //  Created by APPLE on 2022/3/2.
-//
+// @
 
 import UIKit
 
@@ -12,11 +12,25 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     var map = [
         "反转链表": "callReserveList",
-        "两数相加": "plus"
+        "两数相加": "plus",
+        "合并数组": "mergeArray",
+        "移除元素": "removeElement",
+        "删除有序数组中的重复项": "removeDuplicates",
+        "多数元素": "majorityElement",
+        "买卖股票最佳时机":"maxProfit",
+        "最后一个单词的长度":"lengthOfLastWord",
+        "最长公共前缀":"longestCommonPrefix",
     ]
     var list = [
         "反转链表",
         "两数相加",
+        "合并数组",
+        "移除元素",
+        "删除有序数组中的重复项",
+        "多数元素",
+        "买卖股票最佳时机",
+        "最后一个单词的长度",
+        "最长公共前缀"
     ]
     
     var tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), style: UITableView.Style.grouped)
@@ -33,6 +47,61 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         }
         
         
+    }
+    
+    @objc
+    func mergeArray() {
+//        var nums1:[Int] = [1,2,3,0,0,0];
+////        var nums2:[Int] = [2,5,6];
+//        ArrayQ.init().merge(&nums1,
+//                                3,
+//                                [2,5,6],
+//                                3);
+        var nums1:[Int] = [1];
+//        var nums2:[Int] = [2,5,6];
+        ArrayQ.init().merge(&nums1,
+                                3,
+                                [],
+                                0);
+    }
+    
+    @objc
+    func removeElement() {
+        var nums1 : [Int] = [3,2,2,3];
+        let val: Int = 2;
+        let k:Int = ArrayQ.init().removeElement(&nums1, val);
+        print(k);
+    }
+    
+    @objc
+    func removeDuplicates() {
+        var nums:[Int] = [0,0,1,1,1,2,2,3,3,4];
+        let k:Int = ArrayQ.init().removeDuplicates(&nums);
+        print(k);
+    }
+    @objc
+    func majorityElement() {
+        let nums:[Int] = [1,1,1,1,1,1,2,3,3,4];
+        let k:Int = ArrayQ.init().majorityElement1(nums);
+        print(k);
+    }
+    
+    @objc
+    func maxProfit()  {
+        
+    }
+    
+    @objc
+    func lengthOfLastWord() {
+        let result = StringQ.init().lengthOfLastWord("   fly me   to   the moon  ");
+        print(result);
+    }
+    
+    @objc
+    func longestCommonPrefix() {
+        let strs = ["flower","flow","flight"];
+        let result = StringQ.init().longestCommonPrefix(strs);
+        print(result);
     }
     
     @objc

@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     var tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), style: UITableView.Style.grouped)
-    var list = ["MYViewController","MYViewController"]
+    var list = ["MYViewController"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

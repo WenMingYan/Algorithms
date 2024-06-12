@@ -11,6 +11,7 @@ import UIKit
 class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var map = [
+        "判断子序列":"isSubsequence",
         "反转链表": "callReserveList",
         "两数相加": "plus",
         "合并数组": "mergeArray",
@@ -20,8 +21,11 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         "买卖股票最佳时机":"maxProfit",
         "最后一个单词的长度":"lengthOfLastWord",
         "最长公共前缀":"longestCommonPrefix",
+        "找出字符串中第一个匹配项的下标":"strStr",
+        "验证回文串":"isPalindrome"
     ]
     var list = [
+        "判断子序列",
         "反转链表",
         "两数相加",
         "合并数组",
@@ -30,7 +34,9 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         "多数元素",
         "买卖股票最佳时机",
         "最后一个单词的长度",
-        "最长公共前缀"
+        "最长公共前缀",
+        "找出字符串中第一个匹配项的下标",
+        "验证回文串",
     ]
     
     var tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), style: UITableView.Style.grouped)
@@ -47,6 +53,31 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         }
         
         
+    }
+    
+    @objc
+    func isSubsequence()  {
+        let str = "abc";
+        let str1 = "ahbgdc";
+        let result = StringQ.init().isSubsequence(str, str1);
+        print(result);
+    }
+    
+    @objc
+    func isPalindrome() {
+        let str = "0p";
+        let result = StringQ.init().isPalindrome(str);
+        print(result);
+    }
+    
+    @objc
+    func strStr() {
+        let hayStack = "aabaaabaaac";
+        let needle = "aabaaac";
+        let result = StringQ.init().strStrKMP(hayStack, needle);
+        let result1 = StringQ.init().computePrefixFunction(pattern: needle);
+        print(result);
+        print(result1);
     }
     
     @objc

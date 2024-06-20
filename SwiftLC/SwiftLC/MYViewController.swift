@@ -11,6 +11,7 @@ import UIKit
 class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var map = [
+        "赎金信":"canConstruct",
         "判断子序列":"isSubsequence",
         "反转链表": "callReserveList",
         "两数相加": "plus",
@@ -25,6 +26,7 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         "验证回文串":"isPalindrome"
     ]
     var list = [
+        "赎金信",
         "判断子序列",
         "反转链表",
         "两数相加",
@@ -53,6 +55,14 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         }
         
         
+    }
+    
+    @objc
+    func canConstruct() {
+        let ransom = "a";
+        let magazine = "b";
+        let result = HashQ.init().canConstruct(ransom, magazine);
+        print(result);
     }
     
     @objc

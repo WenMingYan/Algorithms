@@ -19,6 +19,7 @@
 		18DF896427CF554E00A8BEDD /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DF896327CF554E00A8BEDD /* ListNode.swift */; };
 		C96589699CEB5E49C3C14ED2 /* libPods-SwiftLC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C887872F65BD30C36A91B25 /* libPods-SwiftLC.a */; };
 		DE0763352C0490B400DEA242 /* ArrayQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0763342C0490B400DEA242 /* ArrayQ.swift */; };
+		DE7651452C19A68D00EB814C /* HashQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7651442C19A68D00EB814C /* HashQ.swift */; };
 		DEDC67652C12FA3600F02355 /* StringQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC67642C12FA3600F02355 /* StringQ.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		20FE6D9CC38C983FA12EED98 /* Pods-SwiftLC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLC.release.xcconfig"; path = "Target Support Files/Pods-SwiftLC/Pods-SwiftLC.release.xcconfig"; sourceTree = "<group>"; };
 		7D8EABFC28E315C904E0E435 /* Pods-SwiftLC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLC.debug.xcconfig"; path = "Target Support Files/Pods-SwiftLC/Pods-SwiftLC.debug.xcconfig"; sourceTree = "<group>"; };
 		DE0763342C0490B400DEA242 /* ArrayQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayQ.swift; sourceTree = "<group>"; };
+		DE7651442C19A68D00EB814C /* HashQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashQ.swift; sourceTree = "<group>"; };
 		DEDC67642C12FA3600F02355 /* StringQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringQ.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 				18DF896327CF554E00A8BEDD /* ListNode.swift */,
 				DE0763342C0490B400DEA242 /* ArrayQ.swift */,
 				DEDC67642C12FA3600F02355 /* StringQ.swift */,
+				DE7651442C19A68D00EB814C /* HashQ.swift */,
 			);
 			path = LCs;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18DF896427CF554E00A8BEDD /* ListNode.swift in Sources */,
+				DE7651452C19A68D00EB814C /* HashQ.swift in Sources */,
 				DEDC67652C12FA3600F02355 /* StringQ.swift in Sources */,
 				1874589827CF3A4700C706A2 /* ViewController.swift in Sources */,
 				DE0763352C0490B400DEA242 /* ArrayQ.swift in Sources */,

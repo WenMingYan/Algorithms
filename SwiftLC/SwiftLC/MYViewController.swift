@@ -11,8 +11,9 @@ import UIKit
 class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var map = [
+        "汇总区间":"summaryRanges",
         "存在重复元素II":"containsNearbyDuplicate",
-        "快乐数(加到笔记中)":"isHappy",
+        "快乐数":"isHappy",
         "有效的字母异位词":"isAnagram",
         "单词规律":"wordPattern",
         "同构字符串":"isIsomorphic",
@@ -31,8 +32,9 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         "验证回文串":"isPalindrome"
     ]
     var list = [
+        "汇总区间",
         "存在重复元素II",
-        "快乐数(加到笔记中)",
+        "快乐数",
         "有效的字母异位词",
         "单词规律",
         "同构字符串",
@@ -67,6 +69,11 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         
     }
     
+    @objc func summaryRanges() {
+        let nums = [0,2,3,4,6,8,9];
+        let result = ListQ.init().summaryRanges(nums);
+        print(result);
+    }
     
     @objc func containsNearbyDuplicate() {
         let nums = [1,2,3,1];

@@ -11,6 +11,11 @@ import UIKit
 class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var map = [
+        "存在重复元素II":"containsNearbyDuplicate",
+        "快乐数(加到笔记中)":"isHappy",
+        "有效的字母异位词":"isAnagram",
+        "单词规律":"wordPattern",
+        "同构字符串":"isIsomorphic",
         "赎金信":"canConstruct",
         "判断子序列":"isSubsequence",
         "反转链表": "callReserveList",
@@ -26,6 +31,11 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         "验证回文串":"isPalindrome"
     ]
     var list = [
+        "存在重复元素II",
+        "快乐数(加到笔记中)",
+        "有效的字母异位词",
+        "单词规律",
+        "同构字符串",
         "赎金信",
         "判断子序列",
         "反转链表",
@@ -57,10 +67,47 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         
     }
     
+    
+    @objc func containsNearbyDuplicate() {
+        let nums = [1,2,3,1];
+        let k = 3;
+        let result = HashQ.init().containsNearbyDuplicate(nums,k);
+        print(result);
+    }
+    
+    @objc func isHappy() {
+        let ransom = 19;
+        let result = HashQ.init().isHappy(ransom);
+        print(result);
+    }
+    
+    @objc func isAnagram() {
+        let ransom = "rat";
+        let magazine = "car";
+        let result = HashQ.init().isAnagram(ransom, magazine);
+        print(result);
+    }
+
+    
+    @objc func wordPattern() {
+        let ransom = "abba";
+        let magazine = "dog dog dog dog";
+        let result = HashQ.init().wordPattern(ransom, magazine);
+        print(result);
+    }
+    
+    @objc
+    func isIsomorphic() {
+        let ransom = "foo";
+        let magazine = "bar";
+        let result = HashQ.init().isIsomorphic(ransom, magazine);
+        print(result);
+    }
+    
     @objc
     func canConstruct() {
-        let ransom = "a";
-        let magazine = "b";
+        let ransom = "fihjjjjei";
+        let magazine = "hjibagacbhadfaefdjaeaebgi";
         let result = HashQ.init().canConstruct(ransom, magazine);
         print(result);
     }

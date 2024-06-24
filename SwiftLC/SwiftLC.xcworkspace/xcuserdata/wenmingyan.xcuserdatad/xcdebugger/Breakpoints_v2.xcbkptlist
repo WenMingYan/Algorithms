@@ -39,32 +39,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B9E756E6-8D4A-44FC-8070-B5EEFE645011"
+            uuid = "C9DA77DF-FF86-4EDB-9BF1-744B3257FD57"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftLC/MYViewController.swift"
+            filePath = "SwiftLC/LCs/HashQ.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "isSubsequence()"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "canConstruct(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "67AD0527-E871-4E10-A15C-095745C90320"
+            uuid = "A1E541FB-748C-41DF-A7B9-B3ED5DBDAECC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftLC/MYViewController.swift"
+            filePath = "SwiftLC/LCs/HashQ.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "canConstruct()"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "wordPattern(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

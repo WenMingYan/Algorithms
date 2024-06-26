@@ -26,45 +26,42 @@ class TreeNodeQ {
         return recur(left!.left, right!.right) || recur(left!.right, right!.left);
     }
     
-    
-    
-    func rightCenterLeftTree(_ root: TreeNode?,_  list:inout [Int])  {
+    func hasPathSum(_ root: TreeNode?, _ aTargetSum: Int) -> Bool {
         if root == nil {
-            return
+            return false
         }
-        if root!.right != nil {
-            leftCenterRightTree(root!.right, &list)
-        } else {
-            list.append(0)
+        if root?.left == nil && root?.right == nil && root!.val == aTargetSum {
+            return true
         }
-        list.append(root!.val)
+       return pathSum(root, aTargetSum)
         
-        if root!.left != nil {
-            leftCenterRightTree(root?.left,&list)
-        } else {
-            list.append(0)
-        }
     }
     
-    func leftCenterRightTree(_ root: TreeNode?,_  list:inout [Int])  {
-        if root == nil {
-            return
+    func pathSum(_ root: TreeNode?, _ aTargetSum: Int) -> Bool {
+        var find = false
+        var targetSum = aTargetSum
+        if root?.left == nil && root?.right == nil && root!.val == targetSum {
+            return true
         }
+        targetSum = targetSum - root!.val
+            
         if root!.left != nil {
-            leftCenterRightTree(root?.left,&list)
+            find = pathSum(root?.left,targetSum)
+            if !find {
+                if root!.right != nil {
+                    find = pathSum(root!.right, targetSum)
+                }
+                return find
+            } else {
+                return find
+            }
         } else {
-            list.append(0)
+            if root!.right != nil {
+                find = pathSum(root!.right, targetSum)
+            }
         }
-        list.append(root!.val)
-        if root!.right != nil {
-            leftCenterRightTree(root!.right, &list)
-        } else {
-            list.append(0)
-        }
+        return find
     }
-    
-    
-    
     
     
     func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {

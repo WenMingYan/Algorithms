@@ -11,6 +11,7 @@ import UIKit
 class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var map = [
+        "路径总和":"hasPathSum",
         "对称二叉树":"isSymmetric",
         "想同的树":"isSameTree",
         "合并两个有序链表":"mergeTwoLists",
@@ -35,6 +36,7 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         "验证回文串":"isPalindrome"
     ]
     var list = [
+        "路径总和",
         "对称二叉树",
         "想同的树",
         "合并两个有序链表",
@@ -75,10 +77,10 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         
     }
     
-    @objc func isSymmetric () {
-        let list1 = TreeNode(1, TreeNode(2,TreeNode(2,nil,nil),nil),
-                                TreeNode(2,TreeNode(2,nil,nil),nil))
-        let result = TreeNodeQ.init().isSymmetric(list1)
+    @objc func hasPathSum () {
+        let list1 = TreeNode(0, TreeNode(2,TreeNode(-2,nil,nil),nil),
+                                TreeNode(8,nil,nil))
+        let result = TreeNodeQ.init().hasPathSum(list1,0)
         print(result);
     }
     

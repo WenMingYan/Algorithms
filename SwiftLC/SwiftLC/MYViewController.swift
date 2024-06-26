@@ -11,6 +11,9 @@ import UIKit
 class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var map = [
+        "对称二叉树":"isSymmetric",
+        "想同的树":"isSameTree",
+        "合并两个有序链表":"mergeTwoLists",
         "汇总区间":"summaryRanges",
         "存在重复元素II":"containsNearbyDuplicate",
         "快乐数":"isHappy",
@@ -32,6 +35,9 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         "验证回文串":"isPalindrome"
     ]
     var list = [
+        "对称二叉树",
+        "想同的树",
+        "合并两个有序链表",
         "汇总区间",
         "存在重复元素II",
         "快乐数",
@@ -67,6 +73,28 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         }
         
         
+    }
+    
+    @objc func isSymmetric () {
+        let list1 = TreeNode(1, TreeNode(2,TreeNode(2,nil,nil),nil),
+                                TreeNode(2,TreeNode(2,nil,nil),nil))
+        let result = TreeNodeQ.init().isSymmetric(list1)
+        print(result);
+    }
+    
+    @objc func isSameTree () {
+        let list1 = TreeNode(1, nil, nil)
+        let list2 = TreeNode(1,nil,TreeNode(2,nil,nil))
+        let result = TreeNodeQ.init().isSameTree(list1,list2)
+        print(result);
+    }
+    
+    @objc
+    func mergeTwoLists()  {
+        let list1 = ListNode(5, nil)
+        let list2 = ListNode(1, ListNode(2,ListNode(4,nil)))
+        _ = ListNoteQ.init().mergeTwoLists(list1, list2)
+        print("");
     }
     
     @objc func summaryRanges() {

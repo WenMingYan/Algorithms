@@ -24,6 +24,9 @@
 		DE987DB92C2A53DF005672F1 /* ListNoteQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE987DB82C2A53DF005672F1 /* ListNoteQ.swift */; };
 		DE987DBB2C2A6277005672F1 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE987DBA2C2A6277005672F1 /* TreeNode.swift */; };
 		DE987DBD2C2A6340005672F1 /* TreeNodeQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE987DBC2C2A6340005672F1 /* TreeNodeQ.swift */; };
+		DEC88D452C2D0AB800923B93 /* BinaryQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC88D442C2D0AB800923B93 /* BinaryQ.swift */; };
+		DEC88D472C2D167F00923B93 /* MathQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC88D462C2D167F00923B93 /* MathQ.swift */; };
+		DEC88D492C2D4FBE00923B93 /* DynamicProgrammingQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC88D482C2D4FBE00923B93 /* DynamicProgrammingQ.swift */; };
 		DEDC67652C12FA3600F02355 /* StringQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC67642C12FA3600F02355 /* StringQ.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +52,9 @@
 		DE987DB82C2A53DF005672F1 /* ListNoteQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNoteQ.swift; sourceTree = "<group>"; };
 		DE987DBA2C2A6277005672F1 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		DE987DBC2C2A6340005672F1 /* TreeNodeQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNodeQ.swift; sourceTree = "<group>"; };
+		DEC88D442C2D0AB800923B93 /* BinaryQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryQ.swift; sourceTree = "<group>"; };
+		DEC88D462C2D167F00923B93 /* MathQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathQ.swift; sourceTree = "<group>"; };
+		DEC88D482C2D4FBE00923B93 /* DynamicProgrammingQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicProgrammingQ.swift; sourceTree = "<group>"; };
 		DEDC67642C12FA3600F02355 /* StringQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringQ.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +83,9 @@
 				DE987DB82C2A53DF005672F1 /* ListNoteQ.swift */,
 				DE987DBA2C2A6277005672F1 /* TreeNode.swift */,
 				DE987DBC2C2A6340005672F1 /* TreeNodeQ.swift */,
+				DEC88D442C2D0AB800923B93 /* BinaryQ.swift */,
+				DEC88D462C2D167F00923B93 /* MathQ.swift */,
+				DEC88D482C2D4FBE00923B93 /* DynamicProgrammingQ.swift */,
 			);
 			path = LCs;
 			sourceTree = "<group>";
@@ -229,16 +238,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				18DF896427CF554E00A8BEDD /* ListNode.swift in Sources */,
+				DEC88D472C2D167F00923B93 /* MathQ.swift in Sources */,
 				DE987DB92C2A53DF005672F1 /* ListNoteQ.swift in Sources */,
 				DE7651452C19A68D00EB814C /* HashQ.swift in Sources */,
 				DE987DBB2C2A6277005672F1 /* TreeNode.swift in Sources */,
 				DE987DB72C297706005672F1 /* ListQ.swift in Sources */,
 				DEDC67652C12FA3600F02355 /* StringQ.swift in Sources */,
+				DEC88D452C2D0AB800923B93 /* BinaryQ.swift in Sources */,
 				1874589827CF3A4700C706A2 /* ViewController.swift in Sources */,
 				DE0763352C0490B400DEA242 /* ArrayQ.swift in Sources */,
 				18374DBB27CF45FF00251DA6 /* MYReserseListQ.swift in Sources */,
 				1874589427CF3A4700C706A2 /* AppDelegate.swift in Sources */,
 				18DF896127CF552100A8BEDD /* MYPlusQ.swift in Sources */,
+				DEC88D492C2D4FBE00923B93 /* DynamicProgrammingQ.swift in Sources */,
 				18374DB427CF3F2700251DA6 /* MYViewController.swift in Sources */,
 				1874589627CF3A4700C706A2 /* SceneDelegate.swift in Sources */,
 				DE987DBD2C2A6340005672F1 /* TreeNodeQ.swift in Sources */,

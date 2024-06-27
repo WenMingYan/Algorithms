@@ -11,6 +11,13 @@ import UIKit
 class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var map = [
+        "爬楼梯":"climbStairs",
+        "x的平方根":"mySqrt",
+        "二进制求和":"reverseBits",
+        "将有序数组转换为二叉搜索树":"sortedArrayToBST",
+        "二叉搜索树的最小绝对差":"getMinimumDifference",
+        "二叉树的层平均值":"averageOfLevels",
+        "完全二叉树节点个数":"countNodes",
         "路径总和":"hasPathSum",
         "对称二叉树":"isSymmetric",
         "想同的树":"isSameTree",
@@ -36,6 +43,13 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         "验证回文串":"isPalindrome"
     ]
     var list = [
+        "爬楼梯",
+        "x的平方根",
+        "二进制求和",
+        "将有序数组转换为二叉搜索树",
+        "二叉搜索树的最小绝对差",
+        "二叉树的层平均值",
+        "完全二叉树节点个数",
         "路径总和",
         "对称二叉树",
         "想同的树",
@@ -75,6 +89,38 @@ class MYViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         }
         
         
+    }
+    
+    @objc func climbStairs() {
+        let n = 4
+        let result = DynamicProgrammingQ.init().climbStairs(n)
+        print(result);
+    }
+    
+    @objc func mySqrt() {
+        let n = 8192
+        let result = MathQ.init().mySqrt(n)
+        print(result);
+    }
+    
+    @objc func sortedArrayToBST() {
+        let list = [-10,-3,0,5,9]
+        let result = TreeNodeQ.init().sortedArrayToBST(list)
+        print(result);
+    }
+    
+    @objc func getMinimumDifference() {
+        let list1 = TreeNode(543, TreeNode(384,nil,TreeNode(445,nil,nil)),
+                                TreeNode(652,nil,TreeNode(699,nil,nil)))
+        let result = TreeNodeQ.init().getMinimumDifference(list1)
+        print(result);
+    }
+    
+    @objc func countNodes () {
+        let list1 = TreeNode(0, TreeNode(2,TreeNode(-2,nil,nil),nil),
+                                TreeNode(8,nil,nil))
+        let result = TreeNodeQ.init().countNodes(list1)
+        print(result);
     }
     
     @objc func hasPathSum () {

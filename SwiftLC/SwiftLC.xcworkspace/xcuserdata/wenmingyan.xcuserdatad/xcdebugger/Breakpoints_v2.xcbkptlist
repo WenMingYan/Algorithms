@@ -71,16 +71,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0E7ABA86-782D-4B17-AD2B-872BEF19AAD0"
+            uuid = "DD31F962-CCBD-429F-B95F-C3693961065D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftLC/LCs/TreeNodeQ.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "hasPathSum(_:_:)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "sortedArrayToBST(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3672D10E-7B46-4125-BB5C-72B2F786050E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftLC/LCs/TreeNodeQ.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "sortedArrayToBST(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

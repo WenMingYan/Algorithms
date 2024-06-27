@@ -17,8 +17,8 @@ class ListNoteQ {
             return list1
         }
         
-        var i1 = list1
-        var i2 = list2
+        let i1 = list1
+        let i2 = list2
         let result = i1!.val < i2!.val ? list1 : list2
         if (i1!.val < i2!.val) {
             i1!.next = mergeTwoLists(i1?.next, i2)

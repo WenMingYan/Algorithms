@@ -19,6 +19,7 @@
 		18DF896427CF554E00A8BEDD /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DF896327CF554E00A8BEDD /* ListNode.swift */; };
 		C96589699CEB5E49C3C14ED2 /* libPods-SwiftLC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C887872F65BD30C36A91B25 /* libPods-SwiftLC.a */; };
 		DE0763352C0490B400DEA242 /* ArrayQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0763342C0490B400DEA242 /* ArrayQ.swift */; };
+		DE51CC8F2C2E512C00C3B3F4 /* MYMiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE51CC8E2C2E512C00C3B3F4 /* MYMiddleViewController.swift */; };
 		DE7651452C19A68D00EB814C /* HashQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7651442C19A68D00EB814C /* HashQ.swift */; };
 		DE987DB72C297706005672F1 /* ListQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE987DB62C297706005672F1 /* ListQ.swift */; };
 		DE987DB92C2A53DF005672F1 /* ListNoteQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE987DB82C2A53DF005672F1 /* ListNoteQ.swift */; };
@@ -47,6 +48,7 @@
 		20FE6D9CC38C983FA12EED98 /* Pods-SwiftLC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLC.release.xcconfig"; path = "Target Support Files/Pods-SwiftLC/Pods-SwiftLC.release.xcconfig"; sourceTree = "<group>"; };
 		7D8EABFC28E315C904E0E435 /* Pods-SwiftLC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLC.debug.xcconfig"; path = "Target Support Files/Pods-SwiftLC/Pods-SwiftLC.debug.xcconfig"; sourceTree = "<group>"; };
 		DE0763342C0490B400DEA242 /* ArrayQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayQ.swift; sourceTree = "<group>"; };
+		DE51CC8E2C2E512C00C3B3F4 /* MYMiddleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYMiddleViewController.swift; sourceTree = "<group>"; };
 		DE7651442C19A68D00EB814C /* HashQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashQ.swift; sourceTree = "<group>"; };
 		DE987DB62C297706005672F1 /* ListQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListQ.swift; sourceTree = "<group>"; };
 		DE987DB82C2A53DF005672F1 /* ListNoteQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNoteQ.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				1874589E27CF3A4800C706A2 /* LaunchScreen.storyboard */,
 				187458A127CF3A4800C706A2 /* Info.plist */,
 				18374DB327CF3F2700251DA6 /* MYViewController.swift */,
+				DE51CC8E2C2E512C00C3B3F4 /* MYMiddleViewController.swift */,
 			);
 			path = SwiftLC;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				18DF896427CF554E00A8BEDD /* ListNode.swift in Sources */,
 				DEC88D472C2D167F00923B93 /* MathQ.swift in Sources */,
 				DE987DB92C2A53DF005672F1 /* ListNoteQ.swift in Sources */,
+				DE51CC8F2C2E512C00C3B3F4 /* MYMiddleViewController.swift in Sources */,
 				DE7651452C19A68D00EB814C /* HashQ.swift in Sources */,
 				DE987DBB2C2A6277005672F1 /* TreeNode.swift in Sources */,
 				DE987DB72C297706005672F1 /* ListQ.swift in Sources */,

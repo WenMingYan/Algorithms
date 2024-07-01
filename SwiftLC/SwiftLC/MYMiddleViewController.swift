@@ -1,22 +1,29 @@
 //
-//  ViewController.swift
+//  MYMiddleViewController.swift
 //  SwiftLC
 //
-//  Created by APPLE on 2022/3/2.
+//  Created by APPLE on 2024/6/28.
 //
 
+import Foundation
 import UIKit
-import SnapKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MYMiddleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var map = [
+        "轮转数组":"rotate",
+        "删除有序数组中的重复项II":"removeDuplicates"
+    ]
+    var list = [
+        "轮转数组",
+       "删除有序数组中的重复项II"
+    ]
     
     var tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), style: UITableView.Style.grouped)
-    var list = ["MYMiddleViewController","MYViewController"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         self.view .addSubview(tableView);
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.delegate = self
@@ -25,6 +32,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             make.left.right.top.bottom.equalTo(self.view)
         }
     }
+    
+    @objc func rotate() {
+        var list = [1,2,3,4,5,6,7]
+        ListQ.init().rotate(&list,3)
+        print("")
+    }
+    @objc func removeDuplicates() {
+        var list = [1,1,1,1,2,2,3]
+        let result = ListQ.init().removeDuplicates(&list)
+        print(result)
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         list.count
@@ -41,8 +60,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let vcStr = list[indexPath.row]
-        let clazz = NSClassFromString("SwiftLC.\(vcStr)") as! UIViewController.Type
-        self.navigationController?.pushViewController(clazz.init(), animated: true)
+        guard let selectorStr = map[vcStr] else { return }
+        let selector = NSSelectorFromString(selectorStr)
+        if self.responds(to: selector) {
+            self.perform(selector)
+        }
+        
     }
 }
-

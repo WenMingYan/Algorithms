@@ -119,16 +119,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F38EC154-F272-447B-8450-64625CB3E856"
+            uuid = "65430B3B-B6FC-48A2-8982-8E440484ECB8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftLC/MYMiddleViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "rotate()"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "canJump()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

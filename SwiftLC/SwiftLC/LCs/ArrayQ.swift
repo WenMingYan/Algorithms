@@ -7,6 +7,8 @@
 
 import Foundation
 class ArrayQ :NSObject {
+
+    
     func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
         if (nums.count == 0) {
             return 0;

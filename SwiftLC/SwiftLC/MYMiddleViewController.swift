@@ -11,10 +11,12 @@ import UIKit
 class MYMiddleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var map = [
+        "跳跃游戏":"canJump",
         "轮转数组":"rotate",
         "删除有序数组中的重复项II":"removeDuplicates"
     ]
     var list = [
+        "跳跃游戏",
         "轮转数组",
        "删除有序数组中的重复项II"
     ]
@@ -33,6 +35,12 @@ class MYMiddleViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
+    
+    @objc func canJump() {
+        let list = [3,2,1,0,4]
+        let result = DynamicProgrammingQ.init().canJump(list)
+        print(result)
+    }
     @objc func rotate() {
         var list = [1,2,3,4,5,6,7]
         ListQ.init().rotate(&list,3)
